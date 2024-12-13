@@ -20,10 +20,12 @@ export const ContactSection = ({ id }: SectionProps) => {
                 will love to collaborate and achieve goals</p>
           </div>
           <div>
+          <a href="https://docs.google.com/document/d/10yTgx-K6t-IebggFjGzL5bCw-gUHflD0wJ_y8pAt7BQ/edit?usp=sharing" target="_blank" rel="noopener noreferrer">
             <button className='text-white bg-gray-900 inline-flex items-center px-6 h-12 rounded-xl gap-2 w-max border border-gray-950'>
-            <span className='font-semibold'>Contact Me</span>
+            <span className='font-semibold'> My Resume</span>
             <ArrowUpRightIcon className="size-4" />
             </button>
+            </a>
           </div>
         </div>
       </div>

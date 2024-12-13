@@ -1,7 +1,8 @@
-import darkSaasLandingPage from "@/assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "@/assets/images/light-saas-landing-page.png";
-import aiStartupLandingPage from "@/assets/images/ai-startup-landing-page.png";
+
 import Image from "next/image";
+import project1image from "@/assets/images/project1.png";
+import project2image from "@/assets/images/project2.png";
+import project3image from "@/assets/images/project3.png";
 import CheckCircleIcon from '@/assets/icons/check-circle.svg'
 import ArrowUpRightIcon from '@/assets/icons/arrow-up-right.svg'
 import grainImage from '@/assets/images/grain.jpg';
@@ -11,40 +12,40 @@ import { SectionProps } from "@/app/page";
 
 const portfolioProjects = [
   {
-    company: "Acme Corp",
-    year: "2022",
-    title: "Dark Saas Landing Page",
+    company: "Collaborative Editor",
+    year: "March 2024",
+    title: "Live collaboration for docs",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Two person can collab on same editor" },
+      { title: "Improved site for team member mentions" },
+      { title: "Authentication on clerk" },
     ],
-    link: "https://youtu.be/4k7IdSLxh6w",
-    image: darkSaasLandingPage,
+    link: "https://collaborative-editor-5vu5.vercel.app/sign-in",
+    image: project1image,
   },
   {
-    company: "Innovative Co",
-    year: "2021",
-    title: "Light Saas Landing Page",
+    company: "CoinLatch",
+    year: "August 2024",
+    title: "Web3 Wallet Adapter for Solana",
     results: [
-      { title: "Boosted sales by 20%" },
-      { title: "Expanded customer reach by 35%" },
-      { title: "Increased brand awareness by 15%" },
+      { title: "Mint Tokens,Send Tokens,connect wallets " },
+      { title: "Solana based for checking balance" },
+      { title: "Create private keys, generate mnemonics" },
     ],
-    link: "https://youtu.be/7hi5zwO75yc",
-    image: lightSaasLandingPage,
+    link: "https://wallet-adapter-two.vercel.app/",
+    image: project2image,
   },
   {
-    company: "Quantum Dynamics",
-    year: "2023",
-    title: "AI Startup Landing Page",
+    company: "Github and Prev Portfolio",
+    year: " September 2024",
+    title: "Next js Portfolio",
     results: [
-      { title: "Enhanced user experience by 40%" },
-      { title: "Improved site speed by 50%" },
-      { title: "Increased mobile traffic by 35%" },
+      { title: "Check out my github for more Code bases" },
+      { title: "I love to work on backends ,Nextjs and Web3" },
+      { title: "Improving my Frontend" },
     ],
-    link: "https://youtu.be/Z7I5uSRHMHg",
-    image: aiStartupLandingPage,
+    link: "https://portfolio-website-sepia-nine-45.vercel.app/",
+    image: project3image,
   },
 ];
 
@@ -90,7 +91,7 @@ export const ProjectsSection = ({ id }: SectionProps) => {
                   <a href={project.link} >
                   <button className="bg-white text-gray-950 h-12 w-full md:w-auto px-6
                   rounded-xl font-semibold inline-flex items-center justify-center gap-2 mt-8">
-                    <span>Visit live site</span>
+                    <span>Live site</span>
                     <ArrowUpRightIcon className="size-4"/>
                   </button>
                   </a>
