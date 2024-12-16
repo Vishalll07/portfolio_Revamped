@@ -18,42 +18,31 @@ export const Header = () => {
       }
       setActiveSection(currentSection);
     };
-
     window.addEventListener("scroll", handleScroll);
-
-  
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
   return (
-  <div className=" flex justify-center items-center fixed top-3 w-full z-10">
+  <div className=" flex justify-center items-center fixed top-3 w-full z-50">
     <nav className="flex gap-1 p-0.5 border border-white/15 rounded-full bg-white/10 backdrop-blur">
     <a
           href="#hero"
           className={`nav-item ${activeSection === "hero" ? "bg-white text-gray-900" : ""}`}
-        >
-          Home
-        </a>
+        >Home</a>
         <a
           href="#projects"
           className={`nav-item ${activeSection === "projects" ? "bg-white text-gray-900" : ""}`}
-        >
-          Projects
-        </a>
+        >Projects</a>
         <a
           href="#about"
           className={`nav-item ${activeSection === "about" ? "bg-white text-gray-900" : ""}`}
-        >
-          About
-        </a>
+        >About</a>
         <a
           href="#contact"
           className={`nav-item ${activeSection === "contact" ? "bg-white text-gray-900" : ""}`}
-        >
-          Contact
-        </a>
+        >Contact</a>
     </nav>
   </div>
   );
